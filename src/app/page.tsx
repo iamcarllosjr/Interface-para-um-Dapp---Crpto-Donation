@@ -1,11 +1,12 @@
-
+import Navbar from "@/app/components/navbar/page"
 
 export default function Home() {
   return (
     <main className="font-extralight tracking-widest min-h-screen bg-[url('../../public/bg-dog.jpg')] bg-no-repeat bg-cover bg-bottom">
+      <Navbar />
       <div className='flex flex-col justify-center pt-12 items-center lg:pt-24 lg:flex-row lg:gap-44 lg:items-stretch'>
         <div className='flex flex-col gap-2 w-2/5'>
-        <h3 className='text-white uppercase'>Give a helping hand to choose to need.</h3>
+        <h3 className='text'>Give a helping hand to choose to need.</h3>
         
          <div className='backdrop-blur-sm bg-white/30 rounded-lg w-full'>
            <div className='flex flex-col gap-6 mt-4 p-6'>
@@ -17,7 +18,7 @@ export default function Home() {
              </div>
              <hr className='border border-white/30' />
 
-             <div className='py-2  flex'>
+             <div className='py-2 flex'>
                <button className='btn-secondary' type="submit">Donate</button>
              </div>
            </div>
@@ -26,7 +27,7 @@ export default function Home() {
 
         <div className='flex flex-col gap-2 pt-12 w-48 mb-5 lg:pt-0'>
         <div className='flex justify-center'>
-        <h2 className='text-white'>Last 5 donations</h2>
+        <h3 className='text'>Last 5 Donations</h3>
         </div>
 
         <div className='btn-donation'>

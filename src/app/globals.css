@@ -15,6 +15,13 @@
   .btn-donation {
     @apply flex items-center w-full pt-3 text-sm md:text-base bg-white/10 p-2 text-zinc-700 rounded-md text-left gap-4 justify-center
   }
+  .btn-connect {
+    @apply text-white bg-white/30 px-3 h-9 rounded-full text-sm tracking-widest uppercase hover:bg-white/50 ease-in duration-200
+  }
+  h3 {
+    @apply text-white uppercase 
+  }
+
 }
 
 * {
