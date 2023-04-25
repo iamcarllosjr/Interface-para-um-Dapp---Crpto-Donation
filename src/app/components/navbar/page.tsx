@@ -24,7 +24,7 @@ const Navbar = () => {
       }
     } else {
       /* Metamask is not installed */
-      console.log("Please install Metamask") 
+      alert("Please install Metamask")
     }
   };
 
@@ -37,7 +37,7 @@ const Navbar = () => {
           setWalletAddress(accounts[0]);
           console.log(accounts[0]) //For test
         } else {
-          console.log("Connect to Metamask using the Connect Button ")
+          alert("Connect to Metamask using the Connect Button")
         }
       } catch (err) {
         if (err instanceof Error)
@@ -57,7 +57,7 @@ const Navbar = () => {
     } else {
       /* Metamask is not installed */
       setWalletAddress("");
-      console.log("Please connect to wallet address")
+      alert("Please connect to wallet address")
     };
   };
 
